@@ -6,7 +6,6 @@ package co.edu.sena.exerciseagentea.controller;
 
 import co.edu.sena.exerciseagentea.model.Shed;
 import java.util.List;
-import javax.swing.GroupLayout.Group;
 
 /**
  *
@@ -17,6 +16,6 @@ public interface IShedController {
     public void insert(Shed shed ) throws Exception;
     public void update(Shed shed) throws Exception;
     public void delete(int id) throws Exception;
-    public Group find(int id) throws Exception;
+    public Shed find(int id) throws Exception;
     public List<Shed> findAll() throws Exception;
 }

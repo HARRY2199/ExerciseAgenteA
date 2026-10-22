@@ -11,14 +11,14 @@ package co.edu.sena.exerciseagentea.model;
  */
 public class Shed {
     private int id;
-    private String status;
-    
+    private String state;
+
     public Shed() {
     }
 
-    public Shed(int id, String status) {
+    public Shed(int id, String state) {
         this.id = id;
-        this.status = status;
+        this.state = state;
     }
 
     public int getId() {
@@ -29,17 +29,17 @@ public class Shed {
         this.id = id;
     }
 
-    public String getStatus() {
-        return status;
+    public String getState() {
+        return state;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setState(String state) {
+        this.state = state;
     }
 
     @Override
     public String toString() {
-        return "shed{" + "id=" + id + ", status=" + status + '}';
+        return "Shed{" + "id=" + id + ", state=" + state + '}';
     }
     
     
