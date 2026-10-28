@@ -4,8 +4,9 @@
  */
 package co.edu.sena.exerciseagentea.controller;
 
+import co.edu.sena.exerciseagentea.data.DataStore;
 import co.edu.sena.exerciseagentea.model.Shed;
-import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -16,12 +17,10 @@ import java.util.List;
  * Autor: este es el controlador de galpon.
  */
 public  class ShedController implements IShedController{
-    public static List<Shed> shedlist = new ArrayList<>();
+    private List<Shed> shedlist = DataStore.getSheList();
     
     public ShedController(){
-        shedlist.add(new Shed(1, "DISPONIBLE"));
-        shedlist.add(new Shed(2, "DISPONIBLE"));
-        shedlist.add(new Shed(3, "OCUPADO"));
+        
     }
 
     @Override
