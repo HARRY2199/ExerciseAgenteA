@@ -7,9 +7,10 @@ package co.edu.sena.exerciseagentea.controller;
 import co.edu.sena.exerciseagentea.model.Shed;
 import java.util.List;
 
-/**
- *
- * @author Aprendiz
+/*
+* Fecha:22/10/2026
+* @author H.Suarez
+* Autor: este es el controlador de granja.
  */
 public interface IShedController {
     

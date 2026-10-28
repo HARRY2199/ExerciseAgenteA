@@ -37,10 +37,10 @@ public class JFrameShed extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextFieldNum = new javax.swing.JTextField();
         jComboBoxEstate = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jButtonRegister = new javax.swing.JButton();
+        jButtonModify = new javax.swing.JButton();
+        jButtonEliminate = new javax.swing.JButton();
+        jButtonClean = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -78,13 +78,13 @@ public class JFrameShed extends javax.swing.JFrame {
 
         jComboBoxEstate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "OCUPADO", "DISPONIBLE", " " }));
 
-        jButton1.setText("Registrar");
+        jButtonRegister.setText("Registrar");
 
-        jButton2.setText("Modificar");
+        jButtonModify.setText("Modificar");
 
-        jButton3.setText("Eliminar");
+        jButtonEliminate.setText("Eliminar");
 
-        jButton4.setText("Limpiar");
+        jButtonClean.setText("Limpiar");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -103,13 +103,13 @@ public class JFrameShed extends javax.swing.JFrame {
                             .addComponent(jComboBoxEstate, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)
+                        .addComponent(jButtonRegister)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)
+                        .addComponent(jButtonModify)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(jButtonEliminate)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4)))
+                        .addComponent(jButtonClean)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -125,10 +125,10 @@ public class JFrameShed extends javax.swing.JFrame {
                     .addComponent(jComboBoxEstate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(jButtonRegister)
+                    .addComponent(jButtonModify)
+                    .addComponent(jButtonEliminate)
+                    .addComponent(jButtonClean))
                 .addContainerGap(75, Short.MAX_VALUE))
         );
 
@@ -271,10 +271,10 @@ public class JFrameShed extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButtonClean;
+    private javax.swing.JButton jButtonEliminate;
+    private javax.swing.JButton jButtonModify;
+    private javax.swing.JButton jButtonRegister;
     private javax.swing.JComboBox<String> jComboBoxEstate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

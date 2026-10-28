@@ -39,13 +39,6 @@ public class Shed {
 
     @Override
     public String toString() {
-        return "Shed{" + "id=" + id + ", state=" + state + '}';
+        return   id + " - " + state;
     }
-
-
-    
-    
-    
-    
-    
 }
