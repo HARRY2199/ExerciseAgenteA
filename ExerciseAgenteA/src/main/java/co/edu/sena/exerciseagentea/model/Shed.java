@@ -7,7 +7,7 @@ package co.edu.sena.exerciseagentea.model;
 /**
  * Fecha:22/10/2026
  * @author H.Suarez
- * Autor: este  es el modelo de granja.
+ * Autor: este  es el modelo de galpon.
  */
 public class Shed {
     private int id;

@@ -8,9 +8,9 @@ import co.edu.sena.exerciseagentea.model.Shed;
 import java.util.List;
 
 /*
-* Fecha:22/10/2026
+* Fecha:28/10/2026
 * @author H.Suarez
-* Autor: este es el controlador de granja.
+* Autor: este es el controlador de galpones.
  */
 public interface IShedController {
     
