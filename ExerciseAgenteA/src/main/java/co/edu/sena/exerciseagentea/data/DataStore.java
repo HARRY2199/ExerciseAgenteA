@@ -11,7 +11,7 @@ import java.util.List;
 /**
  *  Fecha:28/10/2026
  *  @author H.Suarez
- *  Ibjetivo:almacenb de datos o listas de datos
+ *  Ibjetivo:almacen de datos o listas de datos
  */
 public class DataStore {
     private static final List<Shed> shedlist = new ArrayList<>();
