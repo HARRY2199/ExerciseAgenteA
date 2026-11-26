@@ -8,8 +8,9 @@ import co.edu.sena.exerciseagentea.model.Line;
 import java.util.List;
 
 /**
- *
- * @author Aprendiz
+* Fecha:26/11/2026
+* @author H.Suarez
+* Autor: este es el controlador User
  */
 public interface ILineController {
     public void insert(Line line) throws Exception;
