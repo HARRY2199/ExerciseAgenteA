@@ -5,6 +5,7 @@
 package co.edu.sena.exerciseagentea.controller;
 
 import co.edu.sena.exerciseagentea.data.DataStore;
+import co.edu.sena.exerciseagentea.db.DBShed;
 import co.edu.sena.exerciseagentea.model.Shed;
 
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.List;
  * Autor: este es el controlador de galpon.
  */
 public  class ShedController implements IShedController{
-    private List<Shed> shedlist = DataStore.getSheList();
+    private DBShed dbShed = new DBShed();
     
     public ShedController(){
         
@@ -40,7 +41,7 @@ public  class ShedController implements IShedController{
             throw new Exception("El estado es obligatorio");
         }
         
-        shedlist.add(shed);
+        dbShed.insert(shed);
     }
 
     @Override
@@ -61,19 +62,12 @@ public  class ShedController implements IShedController{
         }
         
          //verificar existencia del galpon a actualizar
-        boolean exists = false;
-        for(int i = 0; i < shedlist.size(); i++){
-            if (shedlist.get(i).getId() == shed.getId())
-            {
-                shedlist.set(i, shed); // actualiza
-                exists = true;
-                break;
-            }
-        }
-        if (exists)
-        {
-            throw new Exception("El galpon no existe");
-        }
+         Shed shedExist = find(shed.getId());
+         if(shedExist == null)
+         {
+             throw new Exception("NO existe el registro a actualizar");
+         }
+         dbShed.update(shed);
     }
 
     @Override
@@ -83,19 +77,12 @@ public  class ShedController implements IShedController{
            throw new UnsupportedOperationException("Not supported yet."); 
         }
            //verificar existencia del galpon a Eliminar
-        boolean exists = false;
-        for(int i = 0; i < shedlist.size(); i++){
-            if (shedlist.get(i).getId() == id)
-            {
-                shedlist.remove(i); //eliminar
-                exists = true;
-                break;
-            }
-        }
-        if (exists)
-        {
-            throw new Exception("El galpon no existe");
-        }
+        Shed shedExist = find(id);
+         if(shedExist == null)
+         {
+             throw new Exception("NO existe el registro a actualizar");
+         }
+         dbShed.delete(id);
     }
 
     @Override
@@ -105,22 +92,13 @@ public  class ShedController implements IShedController{
         {
              throw new UnsupportedOperationException("El numero es obligatorio"); 
         }
-        Shed shed = null;
-         for (Shed s: shedlist){
-             if(s.getId() == id)
-             {
-                 shed = s;
-                 break;
-             }
-             
-         } 
-         return shed;
+        return dbShed.find(id);
     }
 
     @Override
     public List<Shed> findAll() throws Exception {
         
-        return shedlist;
+        return dbShed.findAll();
     }
 }
 

@@ -11,22 +11,32 @@ package co.edu.sena.exerciseagentea.model;
  */
 public class Shed {
     private int id;
+    private int number;
     private String state;
-
+    
     public Shed() {
     }
 
-    public Shed(int id, String state) {
+    public Shed(int id, int number, String state) {
         this.id = id;
+        this.number = number;
         this.state = state;
     }
-
+    
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public String getState() {
